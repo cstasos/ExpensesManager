@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Expenses Manager</string>
+    <string name="google_maps_key">AIzaSyB4PwO-NlkSsKoW0miyJ1EmoonlO5GLOEY</string>
+    <string name="CostCategoryName">RESULT_STRING</string>
+    <string name="cost_category">Cost Category</string>
+    <string name="expense">Expense</string>
+    <string name="inspection">Inspection</string>
+    <string name="analysis">Analysis</string>
+    <string name="SyleopoulosAnastasios">Created by Syleopoulos Anastasios 2016</string>
+</resources>

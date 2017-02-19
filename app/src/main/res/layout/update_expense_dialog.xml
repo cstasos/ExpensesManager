@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/gold"
+        android:gravity="center"
+        android:id="@+id/dialogTitleText"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:id="@+id/dialogSpinner"
+            android:theme="@style/Widget.AppCompat.DropDownItem.Spinner"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogDescription"
+            android:background="@drawable/border_for_textview"
+            android:textSize="@dimen/text_size_18"
+            android:padding="@dimen/padding_5"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:hint="Description"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:background="@drawable/border_for_textview"
+                android:textSize="@dimen/text_size_18"
+                android:padding="@dimen/padding_5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:id="@+id/dialogPrice"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialogPriceSymbol"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/dialogUpdate"
+            android:text="Update"/>
+
+    </LinearLayout>
+
+</LinearLayout>
